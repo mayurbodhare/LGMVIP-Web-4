@@ -1,0 +1,80 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.calculator {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 60%; /* Increase width of the calculator */
+  max-width: 800px; /* Increase max-width of the calculator */
+
+}
+
+.display {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 15px; /* Increase padding for a larger display */
+  font-size: 28px;
+}
+
+.input, .result {
+  font-size: 30px;
+  padding: 8px 0;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+button {
+  padding: 20px; /* Increase padding for larger buttons */
+  font-size: 24px; /* Increase font size for larger button text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #f4f4f4;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.display {
+  flex-grow: 1; /* Allow the display to take maximum available space */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px; /* Create some space between display and clear button */
+}
+
+.clearButton {
+  padding: 15px 20px;
+  font-size: 24px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #f4f4f4;
+  transition: background-color 0.2s ease;
+}
+
+.clearButton:hover {
+  background-color: #e0e0e0;
+}
